@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo de Gabriel Duete - Engenheiro de Software Frontend com mais de 4 anos de experiência em React/Next.js e Vue/Nuxt.js.">
+    <title>Gabriel Duete - Desenvolvedor Frontend Pleno</title>
+    <!-- I need CSS in this file, because i need generate a PDF with the resume -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.3;
+            color: #000;
+            background: #f5f5f5;
+            font-size: 10.5pt;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: #fff;
+            padding: 0.75in;
+            min-height: 297mm;
+            position: relative;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+            .container {
+                padding: 0.5in;
+                margin: 0;
+            }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .header .title {
+            font-size: 11pt;
+            margin-bottom: 6px;
+            font-weight: normal;
+        }
+
+        .contact {
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+
+        .contact a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Headers */
+        .section {
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+
+        /* Summary */
+        .summary {
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        /* Skills */
+        .skills-grid {
+            line-height: 1.5;
+        }
+
+        .skill-category {
+            margin-bottom: 4px;
+        }
+
+        .skill-category strong {
+            font-weight: bold;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 10px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title-company {
+            font-weight: bold;
+            font-size: 10.5pt;
+        }
+
+        .job-date {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333;
+        }
+
+        .job-position {
+            font-style: italic;
+            margin-bottom: 4px;
+            font-size: 10pt;
+        }
+
+        .job ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+
+        .job li {
+            margin-bottom: 3px;
+            line-height: 1.35;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 6px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .education-school {
+            font-weight: bold;
+        }
+
+        .education-date {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="header">
+            <h1>Gabriel Duete</h1>
+            <div class="title">Desenvolvedor Frontend Pleno | Contribuidor Open Source</div>
+            <div class="contact">
+                <a href="mailto:gabrielmonteiroduete@gmail.com">gabrielmonteiroduete@gmail.com |</a>
+                <a href="https://linkedin.com/in/gabrielduete" target="_blank" rel="noopener noreferrer">linkedin.com/in/gabrielduete |</a>
+                <a href="https://github.com/gabrielduete" target="_blank" rel="noopener noreferrer">github.com/gabrielduete |</a>
+                <a href="https://gabrielduete.com" target="_blank" rel="noopener noreferrer">gabrielduete.com</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Resumo Profissional</div>
+            <div class="summary">
+                Engenheiro de Software Frontend com <strong>mais de 4 anos de experiência</strong> criando soluções web modernas. Especialista nos ecossistemas <strong>React/Next.js e Vue/Nuxt.js</strong>, com experiência no desenvolvimento de <strong>plataformas de e-commerce, marketplace e sistemas de design open-source</strong>. Histórico comprovado em <strong>otimização de performance</strong>, reduzindo o tempo de build/deploy em <strong>80%</strong>, e em <strong>segurança de frontend</strong>, eliminando 100% de vulnerabilidades críticas nas aplicações. Contribuidor ativo da comunidade open-source com participações em projetos como <strong>Nuxt.js e Unleash</strong>, além de autor técnico em plataformas como DEV.TO, TabNew, Stack Overflow e Blog pessoal.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Competências Técnicas</div>
+            <div class="skills-grid">
+                <div class="skill-category"><strong>IA e Data:</strong> LLM Integration (Claude, Cursor, GitHub Copilot, OpenAI), RAG (Retrieval-Augmented Generation), Semantic Search.</div>
+                <div class="skill-category"><strong>Linguagens e Frameworks:</strong> React, Next.js, Vue.js, Nuxt.js, TypeScript, JavaScript, Jest, Vitest, Go (Golang), Python.</div>
+                <div class="skill-category"><strong>DevOps & Ferramentas:</strong> CI/CD (Azure Pipelines, GitHub Actions), SonarQube, Sentry, AWS (S3, Amplify, CloudFront), Algolia, Unleash, i18n (Internacionalização), Microsoft Clarity, Codecov, Git.</div>
+                <div class="skill-category"><strong>Práticas & Segurança:</strong> Segurança de Frontend (XSS, Cookies/Cache, etc.), Acessibilidade, SEO, ADRs, Metodologias Ágeis, Documentação Técnica.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Experiência Profissional</div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title-company">Juntos Somos Mais</div>
+                    <div class="job-date">Dez 2021 - Momento (4 anos 4 meses)</div>
+                </div>
+                <div class="job-position">Engenheiro de Software</div>
+                <ul>
+                    <li><strong>Otimizei o pipeline de CI/CD</strong> através da paralelização de testes e análise de código (Sonar), reduzindo o tempo de entrega de <strong>1 hora para ~12 minutos (80% de redução)</strong>.</li>
+                    <li><strong>Contribuí para o Unleash (SDK JS)</strong> com um <a href="https://github.com/Unleash/unleash-js-sdk/pull/264" target="_blank" rel="noopener noreferrer">Pull Request</a>, melhorando a biblioteca e colaborando com o core do projeto. A alteração foi feita para prover benefícios no nosso uso do Unleash nas nossas aplicações.</li>
+                    <li><strong>Contribuí para o Nuxt.js</strong><a href="https://github.com/nuxt/nuxt/issues/32494" target="_blank" rel="noopener noreferrer"> reportando e documentando uma issue</a>, auxiliando na identificação de um problema no build da versão 3.16.0+ e na discussão da solução.</li>
+                    <li><strong><a href="https://github.com/juntossomosmais/atomium/issues/743#issuecomment-2828692721" target="_blank" rel="noopener noreferrer">Resolvi um problema de XSS</a> em um web-component</strong>, evitando que seja possível aplicar HTML Injection pelos campos do componente.</li>
+                    <li>Atuei no <strong>desenvolvimento do Design System Atomium (<a href="https://github.com/juntossomosmais/atomium" target="_blank" rel="noopener noreferrer">Open Source</a>)</strong>, gerando uma <strong>redução de 40% no tempo de criação</strong> de novas funcionalidades.</li>
+                    <li><strong>Resolvi um problema de segurança no redirecionamento da aplicação</strong>, evitando que os cookies/cache do usuário sejam invadidos por links externos. Reduzindo os gastos com times de bug bounty.</li>
+                    <li>Reformulei o processo de documentação técnica do time de frontend, centralizando <strong>ADRs</strong> e orientando decisões arquiteturais via POCs.</li>
+                    <li>Atuei na redução de débito técnico por meio de refatorações, otimizações, correções de segurança e <strong>melhorias de performance</strong>, <strong>como tratativa de erros de chunks</strong> e <strong>otimização de performance</strong> de imagens e vídeos.</li>
+                    <li>Desenvolvi features críticas para a plataforma de <strong>e-commerce e marketplace</strong>, focando em aumentar a conversão e satisfação do cliente.</li>
+                    <li><strong>Implementei regras de segurança complexas</strong> e documentei causas e análises de problemas técnicos para o time.</li>
+                    <li><strong>Colaboração com produto, UI/UX e engenharia</strong> para alinhar soluções técnicas para os objetivos do negócio.</li>
+                    <li>Participei em <strong>reuniões e eventos</strong> voltados para front-end e outros temas abrangentes, tendo contato com profissionais que impulsionam meu desenvolvimento técnico e interpessoal.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Educação & Idiomas</div>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="education-school">Sistemas de Informação | IFCE Campus Crato</div>
+                    <div class="education-date">2019 - Presente</div>
+                </div>
+            </div>
+            <div class="education-item" style="margin-top: 4px;">
+                <strong>Idiomas:</strong> Inglês (Intermediário), Português (Nativo).
+            </div>
+        </div>
+    </main>
+</body>
+</html>
